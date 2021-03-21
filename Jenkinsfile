@@ -29,7 +29,7 @@ pipeline {
       steps {
         script {
           sh '''
-            docker build web/ . -t ${image_name}:${image_tag}
+            docker build web/ -t ${image_name}:${image_tag}
           '''
         }
       }
